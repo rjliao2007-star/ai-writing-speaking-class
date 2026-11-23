@@ -36,7 +36,8 @@ button:focus-visible, summary:focus-visible { outline:3px solid #bd7215; outline
 .landing-intro > p{text-indent:2em}
 #topic summary{cursor:pointer;padding:.55rem 0;font-weight:700}
 #topic-options{display:grid;grid-template-columns:minmax(0,1fr);gap:.35rem}
-.topic-group h3{margin:.55rem 0 .35rem;font-size:1rem}
+.topic-group h3{margin:.75rem 0 .35rem;padding:.45rem .6rem;border-radius:.45rem;background:#254b66;color:#fff;font-size:1rem}
+.topic-code{display:inline-block;margin-inline-end:.35em;padding:.08em .38em;border-radius:.3em;background:#e5eff7;color:#153c57;font-variant-numeric:tabular-nums;font-weight:700}
 .topic-group > div{display:grid;grid-template-columns:minmax(0,1fr);gap:.35rem}
 #topic-options button{display:block;width:100%;min-height:44px;text-align:left;white-space:nowrap;overflow-x:auto;font-size:clamp(.85rem,3.8vw,1rem);padding:.5rem .45rem}
 @media(orientation:landscape) and (min-width:480px){#topic-options button{font-size:1rem;padding-inline:.75rem}}
@@ -3857,24 +3858,26 @@ function nav(id){page=id;selected=-1;revealed=false;window.scrollTo({top:0,behav
 function render(){
 const options=el('topic-options');
 const groups=[
-  ['生活物品',['L3-W01-PENCIL','L3-W02-BACKPACK','L3-W03-SHOES','L3-W04-BOTTLE','L3-W06-TOY','L3-W07-CUP']],
-  ['校園生活',['L3-W05-UMBRELLA','L3-W08-LUNCH']],
-  ['運動經驗',['L3-EV-001','L3-W09-ROPE']],
-  ['閱讀心得',['L3-W10-BOOK']]
+  ['生活物品',[['A01','L3-W01-PENCIL'],['A02','L3-W02-BACKPACK'],['A03','L3-W03-SHOES'],['A04','L3-W04-BOTTLE'],['A05','L3-W06-TOY'],['A06','L3-W07-CUP']]],
+  ['校園生活',[['B01','L3-W05-UMBRELLA'],['B02','L3-W08-LUNCH']]],
+  ['運動經驗',[['C01','L3-EV-001'],['C02','L3-W09-ROPE']]],
+  ['閱讀心得',[['D01','L3-W10-BOOK']]]
 ];
 if(!options.innerHTML){
-  options.innerHTML=groups.map(([label,ids])=>{
-    const buttons=ids.map(id=>{
+  options.innerHTML=groups.map(([label,entries])=>{
+    const buttons=entries.map(([code,id])=>{
       const lesson=window.MODULES.find(item=>item.id===id);
       const title=lesson.title+(id==='L3-EV-001'?'（示範）':'');
-      return '<button type="button" onclick="switchModule(this.value)" value="'+esc(id)+'">'+esc(title)+'</button>';
+      return '<button type="button" onclick="switchModule(this.value)" value="'+esc(id)+'"><span class="topic-code">'+esc(code)+'</span> '+esc(title)+'</button>';
     }).join('');
-    return '<section class="topic-group"><h3>'+esc(label)+'</h3><div>'+buttons+'</div></section>';
+    return '<section class="topic-group"><h3><span class="topic-code">'+esc(entries[0][0][0])+'</span> '+esc(label)+'</h3><div>'+buttons+'</div></section>';
   }).join('');
 }
-el('topic-summary').textContent=el('course-area').hidden?'選擇課程主題':M.title;
-const category=groups.find(([,ids])=>ids.includes(M.id))?.[0] ?? '';
-el('hero').textContent=`${category}｜${M.title}`;el('menu').innerHTML=PAGES.map(([id,t])=>`<button class="nav ${page===id?'active':''}" onclick="nav('${id}')">${t}</button>`).join('');el('screen').innerHTML=({home:home,S:see,P:plan,E:express,A:coach,K:keep,quiz:quiz,export:portfolio}[page])();}
+const group=groups.find(([,entries])=>entries.some(([,id])=>id===M.id));
+const category=group?.[0] ?? '';
+const code=group?.[1].find(([,id])=>id===M.id)?.[0] ?? '';
+el('topic-summary').textContent=el('course-area').hidden?'選擇課程主題':code+'｜'+M.title;
+el('hero').textContent=`${category}｜${code} ${M.title}`;el('menu').innerHTML=PAGES.map(([id,t])=>`<button class="nav ${page===id?'active':''}" onclick="nav('${id}')">${t}</button>`).join('');el('screen').innerHTML=({home:home,S:see,P:plan,E:express,A:coach,K:keep,quiz:quiz,export:portfolio}[page])();}
 function home(){return `<h2>${esc(M.title)}｜五關自學旅程</h2><p>${esc(M.subtitle)}</p><div class="line"><div class="fill" style="width:${pct()}%"></div></div><p class="muted">SPEAK完成度 ${pct()}%（須自己勾選各關完成；小測驗另計）</p><div class="steps">${['S 觀察','P 心智圖','E 寫說','A AI教練引導','K 精進發表'].map(x=>`<span class="step">${x}</span>`).join('')}</div>${M.eventGuide ? '<div class="coach">'+esc(M.eventGuide)+'</div>' : ''}<h3>這一關要練習什麼？</h3>${M.objectives.map(s=>`<div class="card">✓ ${esc(s)}</div>`).join('')}<div class="actions"><button class="primary" onclick="nav('S')">從 S 視覺觀察開始 →</button><button onclick="nav('quiz')">先挑戰${M.questions.length}題練習</button></div><div class="coach">🔎 學習守則：先自己想、自己寫，再接受提示；視覺優先，其他感官必須符合真實經驗。</div>`}
 const nextStage={S:'P',P:'E',E:'A',A:'K',K:'export'};
 function complete(id){
