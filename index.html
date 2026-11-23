@@ -5515,186 +5515,365 @@ window.MODULES = [
 }
 
 ];
-const punctuationQuestions={
-  "L3-EV-001": [
-    {
-      "id": "L3-EV-001-PUNC1",
-      "stage": "E",
-      "kind": "標點｜逗號與句號",
-      "q": "哪一句能看出「先準備，再下水」，而且在意思完整的地方停住？",
-      "answer": 1,
-      "options": [
-        "我戴好泳鏡。我扶著池邊慢慢下水，",
-        "我戴好泳鏡，扶著池邊慢慢下水。",
-        "我戴好。泳鏡扶著池邊慢慢下水。",
-        "我戴好泳鏡？扶著池邊慢慢下水。"
-      ],
-      "why": [
-        "最後一個意思已經講完，句尾要用句號。",
-        "兩個接連的動作用逗號分開，說完用句號。",
-        "句號把「戴好泳鏡」拆開，意思不完整。",
-        "這裡在敘述動作，沒有在發問。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "把你下水前後的兩個動作寫成一句，想想在哪裡停。"
-    },
-    {
-      "id": "L3-EV-001-PUNC2",
-      "stage": "E",
-      "kind": "標點｜冒號與引號",
-      "q": "教練直接問我準備好了沒。哪一句的標點最清楚？",
-      "answer": 2,
-      "options": [
-        "教練問「你準備好了嗎」。",
-        "教練問：「你準備好了嗎」？",
-        "教練問：「你準備好了嗎？」",
-        "教練問？「你準備好了嗎。」"
-      ],
-      "why": [
-        "開口前可用冒號引出說話內容，問句也要標出問號。",
-        "問的是教練說的話，問號應放在引號裡。",
-        "冒號引出說話內容，引號裡的問號表示教練在發問。",
-        "「教練問」是敘述，問號要放在教練真正問的句子後面。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "寫一句同學在泳池邊問你的話，標出他實際說的部分。"
-    }
-  ],
-  "L3-W08-LUNCH": [
-    {
-      "id": "L3-W08-LUNCH-PUNC1",
-      "stage": "E",
-      "kind": "標點｜頓號與逗號",
-      "q": "哪一句的標點能清楚分開三樣菜，還接得上後面的動作？",
-      "answer": 0,
-      "options": [
-        "餐盤裡有玉米、青花菜和豆腐，我先夾起一朵青花菜。",
-        "餐盤裡有玉米。青花菜和豆腐，我先夾起一朵青花菜。",
-        "餐盤裡有玉米、青花菜和豆腐、我先夾起一朵青花菜。",
-        "餐盤裡有玉米青花菜和豆腐。我先夾起一朵青花菜。"
-      ],
-      "why": [
-        "頓號分開並列的菜名，逗號接上下一個動作。",
-        "句號把同一份菜單從中切斷。",
-        "後面是另一個動作，和前面的菜名並列不起來。",
-        "「玉米」和「青花菜」之間少了停頓。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "寫出餐盤裡的三樣菜，再接一句你挑了哪一道。"
-    },
-    {
-      "id": "L3-W08-LUNCH-PUNC2",
-      "stage": "E",
-      "kind": "標點｜引號與驚嘆號",
-      "q": "同桌忽然舉起青花菜，大聲喊「小樹站起來了」。哪一句把他的話和語氣寫得最清楚？",
-      "answer": 3,
-      "options": [
-        "同桌大喊：「小樹站起來了，」",
-        "同桌大喊！「小樹站起來了。」",
-        "同桌大喊：「小樹站起來了。」！",
-        "同桌大喊：「小樹站起來了！」"
-      ],
-      "why": [
-        "他已經喊完了，逗號會讓人以為話還沒說完。",
-        "驚嘆號放在「大喊」後面，沒標在他的話裡。",
-        "驚嘆語氣屬於他喊的話，應放在引號裡。",
-        "冒號引出話語，驚嘆號在引號內，讀得出他大喊的語氣。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "寫下讓大家笑的一句話，選一個符合當時語氣的句尾標點。"
-    }
-  ],
-  "L3-W01-PENCIL": [
-    {
-      "id": "L3-W01-PENCIL-PUNC1",
-      "stage": "E",
-      "kind": "標點｜句號與逗號",
-      "q": "畫到一半筆尖斷了。哪一句的標點能讓讀者跟上後面的兩個動作？",
-      "answer": 1,
-      "options": [
-        "筆尖斷了，我把碎筆芯。撥到紙邊，再向同桌借筆。",
-        "筆尖斷了。我把碎筆芯撥到紙邊，再向同桌借筆。",
-        "筆尖斷了？我把碎筆芯撥到紙邊，再向同桌借筆。",
-        "筆尖斷了。我把碎筆芯撥到紙邊，再向同桌借筆、"
-      ],
-      "why": [
-        "「把碎筆芯撥到紙邊」是一個動作，不要從中間切開。",
-        "句號分開意外和反應，逗號分開接著做的兩個動作。",
-        "筆尖已經斷了，這句不是疑問。",
-        "最後一個動作說完了，句尾要用句號。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "在自己的故事裡用句號分開「發生什麼」和「我怎麼做」。"
-    },
-    {
-      "id": "L3-W01-PENCIL-PUNC2",
-      "stage": "E",
-      "kind": "標點｜引號與問號",
-      "q": "同桌小聲問我要不要借筆。哪一句標點正確？",
-      "answer": 2,
-      "options": [
-        "同桌小聲問：「你要不要借我的筆。」",
-        "同桌小聲問：「你要不要借我的筆」？",
-        "同桌小聲問：「你要不要借我的筆？」",
-        "同桌小聲問？「你要不要借我的筆。」"
-      ],
-      "why": [
-        "這句真的在發問，句尾應加問號。",
-        "問號屬於同桌的原話，應放在引號裡。",
-        "冒號帶出原話，問號放在引號裡。",
-        "「同桌小聲問」只是交代誰開口，問號應放在原話句尾。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "把一句印象深刻的問話寫成對話，看看問號是否在引號裡。"
-    }
-  ],
-  "L3-W02-BACKPACK": [
-    {
-      "id": "L3-W02-BACKPACK-PUNC1",
-      "stage": "E",
-      "kind": "標點｜句號與逗號",
-      "q": "哪一句能把「此刻摸到白線」和「想起昨晚」分清楚？",
-      "answer": 0,
-      "options": [
-        "我摸到背帶上的白線。我想起昨晚，爸爸戴著眼鏡幫我縫書包。",
-        "我摸到背帶上。的白線，我想起昨晚爸爸幫我縫書包。",
-        "我摸到背帶上的白線？我想起昨晚，爸爸幫我縫書包。",
-        "我摸到背帶上的白線、我想起昨晚爸爸幫我縫書包。"
-      ],
-      "why": [
-        "句號分開此刻與回憶，逗號讓回憶的時間和畫面之間有短停頓。",
-        "「背帶上的白線」是一個完整的詞組，不能用句號拆開。",
-        "摸到白線是已經發生的事，不是在發問。",
-        "頓號用來列舉，這裡是兩個完整的意思。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "試著用兩句短句，先寫你摸到的細節，再寫想起的畫面。"
-    },
-    {
-      "id": "L3-W02-BACKPACK-PUNC2",
-      "stage": "E",
-      "kind": "標點｜冒號與引號",
-      "q": "那晚爸爸修好書包，笑著告訴我明天可以背去上學。哪一句正確標出他說的話？",
-      "answer": 3,
-      "options": [
-        "爸爸笑著說？「明天可以背去上學了。」",
-        "爸爸笑著說：「明天可以背去上學了」。",
-        "爸爸笑著說，「明天可以背去上學了，」",
-        "爸爸笑著說：「明天可以背去上學了。」"
-      ],
-      "why": [
-        "敘述爸爸開口時，用冒號引出原話。",
-        "這是一整句直接引語，句號放在引號裡。",
-        "原話已經說完，不宜用逗號結束。",
-        "冒號引出爸爸的話，句號和整句原話一起放在引號裡。"
-      ],
-      "discussion": "比較選項的停頓和說話語氣，指出哪一個標點改變了讀法。",
-      "transfer": "從你的書包故事挑一句你還記得的話，用引號標出來。"
-    }
-  ]
+function buildSpekQuestions(lesson, scene) {
+  const [, object, person, place, detail, first, next, result, ask, call, reminder] = scene;
+  const action = `我先${first}，接著${next}。`;
+  const detailSentence = `在${place}，我${detail}。`;
+  const stages = {
+    S: [
+      ['感官取材', '哪一句把眼前的細節寫得最清楚？', detailSentence,
+        ['我覺得這裡很有意思。','我想起好幾件以前的事。','我留意了一下四周。'],
+        ['說了感受，讀者還想像不出場景。','寫的是回憶，還沒有眼前的細節。','有觀察的動作，但沒寫觀察到什麼。'],
+        '交代地點，也記下當時真的能看見、聽見或摸到的事。','寫一句你當時能感覺到的細節。'],
+      ['人物觀察', `觀察${person}時，哪一則筆記最容易寫成有畫面的段落？`, `我記下${person}說的「${ask}？」也記下自己怎麼回應。`,
+        ['只記下他人很好。','先猜他當時一定在想什麼。','把他的名字寫三次。'],
+        ['有評語，還需要一幕具體的畫面。','心理活動可以推想，但先記真正看見或聽見的。','名字讓人知道是誰，還看不到人物怎麼做。'],
+        '記下聽得到的原話，再補自己的回應，可以寫出人物互動。','記一句原話和一個看得到的反應。'],
+      ['觀察與感想', `以下哪一項可以先當作「看得見或聽得到的證據」，用來寫〈${lesson.title}〉？`, detailSentence,
+        ['我想，這一定是最棒的一天。','我猜大家都和我一樣緊張。','我覺得自己好像進步了。'],
+        ['這是感想，可以放在細節後面。','這是推測，還需要動作、表情或話語支持。','這是判斷，可以補上看見的變化。'],
+        '這一句交代感官能直接發現的畫面。','在觀察筆記上分開寫「我注意到」和「我覺得」。'],
+      ['細看動作', `想把${object}寫進故事，哪一項最適合當作動作筆記？`, `先${first}，再${next}。`,
+        ['我記得那一刻很有趣。','我有時想到很多事情。','先寫整天的心得就好。'],
+        ['有心情，但還沒寫怎麼做。','這是平常的想法，沒有當時的動作。','心得可以最後寫，先記錄關鍵動作。'],
+        '有先後次序，讀者能跟著你做。','把關鍵一刻拆成兩個能看見的動作。']
+    ],
+    P: [
+      ['審題與選材', `要寫〈${lesson.title}〉，哪一種材料最能聚焦？`, `只選在${place}的一幕，從「${detail}」寫到我接著怎麼做。`,
+        ['把之前和之後整天做的事都列出來。',`花一整篇比較不同款的${object}。 `,'只寫結論，再拼湊幾個不相關的例子。'],
+        ['材料太多，讀者難找出主事件。','可以用一個外觀細節，沒有必要改寫成產品介紹。','先挑真實、扣題的一幕，才容易寫清楚結尾。'],
+        '同一場景有關鍵細節，也有接下來的動作。','用一句話說出最扣題的一幕。'],
+      ['事件順序', '這組動作有先後關係，哪個提綱能讓讀者跟上？', `${first} → ${next} → ${result}`,
+        [`${result} → ${next} → ${first}`,`${next} → ${first} → ${result}`,`${result} → ${first} → ${result}`],
+        ['順序倒過來了。','把先做、接著做的動作對調了。','重複結果，漏掉了一個動作。'],
+        '先列動作，再交代後來如何。','在心智圖寫三格：先做、接著做、最後怎樣。'],
+      ['主次取捨', `文章主角在${place}遇到一個狀況，哪項安排比較清楚？`, `背景一兩句，把篇幅留給「${detail}」以及後面的反應。`,
+        ['背景寫最長，關鍵事件只用一句帶過。','每一個小動作都寫同樣長。','前半篇先介紹好幾件無關的事。'],
+        ['篇幅應多留給事情起變化的地方。','最值得看的動作可以放慢來寫。','無關背景太多，會分散焦點。'],
+        '交代場景後，讓讀者看清楚事情如何變化。','在心智圖用星號標出最值得放慢寫的一幕。'],
+      ['換段位置', '哪一種分法能讓每一段各有一個重點？', `第一段交代${place}和人物，第二段寫變化，第三段寫怎麼做，第四段寫${result}及發現。`,
+        ['每寫一句就換段。','四段都只寫外觀。','把變化和結果各寫兩遍。'],
+        ['換段要看內容重點是否改變。','外觀只需要放在有幫助的地方。','每段可以往下推進，避免重複。'],
+        '四段分別交代背景、變化、反應和結果。','替四段各寫一個不重複的小標題。']
+    ],
+    E: [
+      ['動作描寫','哪一句能讓讀者想像人物接連做了什麼？',action,
+        ['我把事情處理得非常好。','我做了很多很多。','我動了一下，然後也動了一下。'],
+        ['說了評價，沒有寫出動作。','只說數量，讀者不知道做了什麼。','順序有了，動作太模糊。'],
+        '動詞寫得具體，讀者知道先做什麼、接著做什麼。','把「我就去做了」改成看得見的兩個動作。'],
+      ['開場扣題', `要讓讀者一下就走進〈${lesson.title}〉的場景，哪種開場最合適？`, detailSentence,
+        ['有很多事情我想寫，所以先說一下。','今天我要告訴大家一件事情。','說到這個，我還有別的事想寫。'],
+        ['說了寫作計畫，還沒帶出場景。','可以交代是哪裡，以及有什麼特別的細節。','下一句可能離題，先回到最重要的一幕。'],
+        '地點和感官細節直接帶讀者進入情節。','挑一句能看見或聽見的話當開頭。'],
+      ['接續事件', `上一句是「${detailSentence}」接下來哪句最容易讓讀者跟上？`,action,
+        ['我又想起另一件完全不同的事。','那一天大概就是那樣。','前面的畫面真的非常非常特別。'],
+        ['忽然轉去另一件事，原來的故事中斷了。','太快結束，沒交代如何應對。','重複評語，沒有推進事件。'],
+        '在關鍵細節後接自己的反應，故事會往下走。','找一個感官細節，在下一句補上當時的反應。'],
+      ['以細節寫感受', '想讓讀者懂你的感受，哪一種句法最有幫助？', `先寫「${result}」，再加一句這個結果為什麼讓你記得。`,
+        ['把「我很有感覺」用三種說法寫三次。','只加很多「真的」和「非常」。','用「事情就這樣結束」收掉。'],
+        ['重複感受詞，讀者還是不知道原因。','加強語氣不能代替一個理由。','可以補上最後看見的畫面或心情的變化。'],
+        '用結果帶出感受及理由，讀者更容易明白。','把一個空泛的心情詞接到真實的結果。']
+    ],
+    K: [
+      ['刪贅修句', `原稿寫「我一直不停地重複在${place}一直看，看到的地方真的很多。」若要留下這篇最重要的觀察，哪句較清楚？`,detailSentence,
+        [`我不停地一直在${place}看來又看去。`,'我看到好多好多很棒的東西。','我看了又看，再一直看。'],
+        ['仍然重複「不停地」「一直」。','刪了一些字，但沒留下觀察結果。','保留太多同義動作，還是沒有寫出細節。'],
+        '留下地點和觀察內容，把重複的話刪掉。','讀讀自己的稿子，刪掉一對意思重複的詞。'],
+      ['補上缺漏', `文中從「我${detail}」直接跳到「${result}」。最需要補什麼？`,action,
+        ['先補上當天的早餐。',`多描寫幾個${object}的牌子。`,'把結尾再寫一遍。'],
+        ['早餐與這一段的變化無關。','產品名稱不會交代結果怎麼發生。','重複結果仍然補不上過程。'],
+        '補上人物實際做了什麼，才能接起變化和結果。','找一處跳太快的地方，補一個看得見的動作。'],
+      ['結尾回扣', '哪一種改法能讓結尾接回前面的故事？', `說出「${result}」，再留一處開頭提過的細節或當時的感受。`,
+        ['再開一段完全不同的故事。','把全文從頭複述一遍。','只留下「總而言之很棒」。'],
+        ['收尾時新開主線會分散焦點。','可以只用一處細節呼應，不須全部重說。','感受過於籠統，可以寫清楚為什麼。'],
+        '結果接上前面的關鍵畫面，整篇會比較完整。','把結尾的空泛評語換成一個具體結果。'],
+      ['對照題意', `修完〈${lesson.title}〉後，最後一次讀稿應該先檢查什麼？`, `確認${object}與故事的關係、人物怎麼反應，以及結果是否扣回題意。`,
+        ['數一數用了幾個漂亮的詞。','只看字數夠不夠。','把短句都改成長句。'],
+        ['用詞漂亮也需要扣題。','字數可以參考，更要看事件是否說清楚。','長短句都能用，先看哪一種停頓合適。'],
+        '把題目和段落重點對照，能看出哪裡離題或缺漏。','讀完每一段，寫一句它跟題目有什麼關係。']
+    ]
+  };
+
+  const punctuation = {
+    S: [
+      ['逗號與句號','把地點和看到或聽到的一幕接成一句，哪一個標點寫法合適？',detailSentence,
+        [`在${place}。我${detail}。`,`在${place}？我${detail}。`,`在${place}、我${detail}。`],
+        ['地點短語還在為後文交代背景。','這裡只在交代地點。','頓號常用於列舉，這裡是地點接上觀察。'],
+        '逗號接上背景和觀察，句號收完整句。','寫一句「在＿＿，我注意到＿＿。」'],
+      ['問號','這句是在發問，要知道對方的答案。哪個句尾合適？',ask+'？',[ask+'。',ask+'！',ask+'、'],
+        ['句號適合平靜的敘述。','驚嘆號突顯情緒，這題要寫出疑問。','頓號常用於列舉，不能當這句的句尾。'],
+        '發問要知道答案，句尾用問號。','看一看自己的物品或故事，寫一個真的想問的問題。']
+    ],
+    P: [
+      ['頓號','提綱要把三項線索簡潔地列在同一句。哪句合適？',`我記下三個線索：${object}、${person}、${place}。`,
+        [`我記下三個線索：${object}。${person}。${place}。`,`我記下三個線索：${object}？${person}？${place}。`,`我記下三個線索：${object}！${person}！${place}。`],
+        ['句號切成好幾句，失去列舉的連貫。','這些線索沒有在發問。','驚嘆號不適合平靜地列舉。'],
+        '三項線索並列，可以用頓號分開。','把提綱裡的三樣東西用頓號列出來。'],
+      ['冒號','哪句用標點先提醒讀者，接著要交代具體做法？',`我想到一個辦法：${reminder}。`,
+        [`我想到一個辦法？${reminder}。`,`我想到一個辦法、${reminder}。`,`我想到一個辦法！${reminder}？`],
+        ['前面是提示下一句，這裡沒有發問。','前後不是並列的詞語。','後面是在說明做法，不是在發問。'],
+        '冒號提示讀者，具體的辦法就在後面。','用「我想到一個辦法：＿＿。」寫下你的方法。']
+    ],
+    E: [
+      ['逗號連接動作','要把接連的動作寫成一句，並短短停一下，哪句合適？',action,
+        [`我先${first}。接著${next}。`,`我先${first}？接著${next}。`,`我先${first}、接著${next}。`],
+        ['兩句也能讀通，但題目指定連成一句。','這裡在敘述，沒有發問。','這裡接的是先後動作，適合用逗號。'],
+        '同一畫面中的動作接著發生，可以用逗號短停。','用「先……，接著……。」寫連續的動作。'],
+      ['引號與驚嘆號','這句話是突然大聲喊出來的。哪個寫法符合原話和當時語氣？',`有人喊：「${call}！」`,
+        [`有人喊：「${call}」！`,`有人喊？「${call}。」`,`有人喊：「${call}？」`],
+        ['驚嘆號屬於喊出的原話，放在引號內。','說話提示不是問句，冒號可以帶出原話。','問號改成了發問的語氣。'],
+        '冒號引出原話，引號裡的驚嘆號讓人聽出喊聲。','在故事裡找一句有明顯語氣的原話，試著加上標點。']
+    ],
+    K: [
+      ['刪節號','修稿時要表現人物說到一半停住了，哪個寫法最合適？',`「如果我先${first}，也許⋯⋯」`,
+        [`「如果我先${first}，也許。」`,`「如果我先${first}，也許？」`,`「如果我先${first}，也許、」`],
+        ['句號通常表示一句話已經說完。','這裡要寫話沒說完，不是發問。','頓號用於列舉。'],
+        '刪節號讓讀者感到聲音停住，後面的話沒有說完。','讀讀稿子。有人真的話說一半停住時，可以試用「⋯⋯」。'],
+      ['破折號','要在後半句補充說明「一件事」是什麼，並特意停一下，哪句合適？',`我記住了一件事——${reminder}。`,
+        [`我記住了一件事⋯⋯${reminder}？`,`我記住了一件事、${reminder}。`,`我記住了一件事？${reminder}！`],
+        ['這裡的話會繼續說清楚，也沒有在發問。','前後不是同類詞語的列舉。','這裡要補充內容，不是先問再感嘆。'],
+        '破折號後面補充交代「一件事」的內容。','挑一句要補充說明的句子，讀讀看加破折號前後的效果。']
+    ]
+  };
+
+  function makeQuestion(row, stage, slot, isPunctuation) {
+    const [skill, q, correct, distractors, feedback, explanation, transfer] = row;
+    const options = [...distractors];
+    const why = [...feedback];
+    const answer = (Object.keys(stages).indexOf(stage) + slot) % 4;
+    options.splice(answer, 0, correct);
+    why.splice(answer, 0, explanation);
+    return {
+      id: `${lesson.id}-SPEK-${stage}-${isPunctuation ? 'P' : 'W'}${slot+1}`,
+      stage, kind: isPunctuation ? `標點｜${skill}` : skill, q, answer, options, why,
+      discussion: isPunctuation ? '選兩項各念一次，說說停頓或語氣的差別。' : '比較兩個容易混淆的選項，找出讓你決定的細節。',
+      transfer,
+    };
+  }
+
+  return Object.keys(stages).flatMap(stage => {
+    const existing = lesson.questions.filter(q =>
+      q.stage === stage && !/標點|句號|分句|演說|口說|口語/.test(q.kind)
+    ).slice(0, 2);
+    const writing = stages[stage].slice(0, 4 - existing.length)
+      .map((row, i) => makeQuestion(row, stage, i, false));
+    const marks = punctuation[stage].map((row, i) => makeQuestion(row, stage, i, true));
+    return [...existing, ...writing, ...marks];
+  });
 }
-;
-for (const lesson of window.MODULES) lesson.questions.push(...(punctuationQuestions[lesson.id] ?? []));
+
+const quizScenes=new Map([
+  [
+    "L3-EV-001",
+    "泳鏡",
+    "教練",
+    "池邊",
+    "聽見水拍在池邊",
+    "戴好泳鏡",
+    "扶著池邊下水",
+    "我終於敢把臉放進水裡",
+    "你準備好了嗎",
+    "我做到了",
+    "先扶著池邊"
+  ],
+  [
+    "L3-W01-PENCIL",
+    "鉛筆",
+    "同桌",
+    "教室",
+    "聽見筆尖喀的一聲",
+    "把斷掉的筆芯撥開",
+    "向同桌借筆",
+    "我把畫完成了",
+    "你要不要借筆",
+    "畫好了",
+    "把筆芯撥到紙邊"
+  ],
+  [
+    "L3-W02-BACKPACK",
+    "書包",
+    "爸爸",
+    "家裡",
+    "摸到背帶上刺刺的白線",
+    "按住背帶的布邊",
+    "看爸爸把線拉緊",
+    "我背著修好的書包上學",
+    "背帶縫好了嗎",
+    "明天可以背了",
+    "把布邊按住"
+  ],
+  [
+    "L3-W03-SHOES",
+    "球鞋",
+    "媽媽",
+    "山路",
+    "聽見鞋底擦過碎石",
+    "找一塊平一點的石頭",
+    "踩穩後再抬起另一隻腳",
+    "我一步一步走過了碎石坡",
+    "你踩穩了嗎",
+    "我走過來了",
+    "先找平一點的石頭"
+  ],
+  [
+    "L3-W04-BOTTLE",
+    "水壺",
+    "外婆",
+    "家門口",
+    "摸到暖暖的壺身",
+    "轉身回到桌邊",
+    "接過外婆遞來的水壺",
+    "我沒忘記帶水了",
+    "你帶水壺了嗎",
+    "我找到了",
+    "回桌邊拿水壺"
+  ],
+  [
+    "L3-W05-UMBRELLA",
+    "雨傘",
+    "同學",
+    "校門口",
+    "聽見雨點打在傘布上",
+    "把傘往同學那邊移",
+    "和他一起跨過水窪",
+    "我們一起走到轉角",
+    "你要一起走嗎",
+    "小心水窪",
+    "把傘撐在兩人中間"
+  ],
+  [
+    "L3-W06-TOY",
+    "玩具小車",
+    "表姊",
+    "客廳",
+    "聽見小車咚一聲撞上桌腳",
+    "在桌腳前放一塊海綿",
+    "把斜坡放低再試一次",
+    "小車這次停在海綿前",
+    "要不要再試一次",
+    "小車停住了",
+    "把斜坡放低一點"
+  ],
+  [
+    "L3-W07-CUP",
+    "杯子",
+    "同桌",
+    "教室",
+    "摸到又濕又涼的杯壁",
+    "把杯子從習作旁移開",
+    "用紙巾擦乾桌上的水",
+    "同桌的習作沒有被弄濕",
+    "桌上怎麼有水",
+    "快把本子移開",
+    "先把杯子放到杯墊上"
+  ],
+  [
+    "L3-W08-LUNCH",
+    "青花菜",
+    "同桌",
+    "午餐桌旁",
+    "聽見同桌把青花菜叫成小樹",
+    "把一朵青花菜夾起來",
+    "跟同桌一起笑了",
+    "我吃完了那朵小樹",
+    "你的小樹要種在哪裡",
+    "小樹站起來了",
+    "先留下一朵青花菜"
+  ],
+  [
+    "L3-W09-ROPE",
+    "跳繩",
+    "場邊同學",
+    "操場",
+    "聽見繩子啪一聲打在地上",
+    "把繩子拉回腳後",
+    "聽著拍地聲重新跳",
+    "我在哨聲響前又跳了幾下",
+    "你還要再試嗎",
+    "照自己的速度跳",
+    "先找回自己的速度"
+  ],
+  [
+    "L3-W10-BOOK",
+    "故事書",
+    "故事裡的小熊",
+    "書架旁",
+    "看見夾在書頁間的小紙角",
+    "翻到小熊出門找妹妹的那一頁",
+    "想起自己打雷時去找弟弟",
+    "我明白自己為什麼喜歡這一幕",
+    "你害怕嗎",
+    "我來陪你",
+    "先翻到最喜歡的那一頁"
+  ],
+  [
+    "WRITING-RECESS",
+    "球",
+    "小宇",
+    "操場邊",
+    "看見球斜斜地滾向走廊",
+    "抬頭看看走廊有沒有人",
+    "伸腳輕輕把球壓住",
+    "球沒滾到過路的人腳邊",
+    "球滾去哪裡了",
+    "球來了",
+    "先看看走廊有沒有人"
+  ],
+  [
+    "WRITING-CLASSMATE",
+    "藍框眼鏡",
+    "小晴",
+    "操場",
+    "看見小晴的藍框眼鏡滑到鼻尖",
+    "請旁邊的同學通知老師",
+    "等我站穩後陪我去健康中心",
+    "我記得她特地放慢腳步",
+    "你還好嗎",
+    "老師來了",
+    "先在原地等老師"
+  ],
+  [
+    "WRITING-CARTOON",
+    "卡住的氣球",
+    "阿米",
+    "大樹旁",
+    "看見阿米的圓眼睛突然睜大",
+    "找來一根長樹枝",
+    "和朋友一起把緞帶挑下來",
+    "氣球終於離開了樹枝",
+    "你想到辦法了嗎",
+    "氣球拿下來了",
+    "先找一根長樹枝"
+  ],
+  [
+    "WRITING-FAMILY",
+    "烤地瓜",
+    "阿公",
+    "家裡",
+    "聞到剛烤好的地瓜香",
+    "把地瓜剝開放到碗邊",
+    "和阿公一起分著吃",
+    "我記得他替我留的那一顆",
+    "你餓不餓",
+    "地瓜烤好了",
+    "先把地瓜放涼"
+  ],
+  [
+    "WRITING-TEACHER",
+    "濕布",
+    "王老師",
+    "自然教室",
+    "看見老師在眼鏡後微微彎起眼睛",
+    "摸一摸曬過的布",
+    "再比較另一塊濕布",
+    "我說出了兩塊布的不同",
+    "你看見了什麼",
+    "我找到不同的地方了",
+    "先說自己看見的"
+  ]
+]
+.map(scene=>[scene[0],scene]));
+for (const lesson of window.MODULES) lesson.questions=buildSpekQuestions(lesson,quizScenes.get(lesson.id));
 </script>
 
 <header><div class="wrap site-header"><div><h1>🏝️ AI教練教你寫作和演說</h1><div class="sub" id="hero"></div></div>
@@ -5842,7 +6021,7 @@ function openQuiz(stage){
   nav('quiz');
 }
 function getQs(){return quizStage==='all'?M.questions:M.questions.filter(q=>q.stage===quizStage)}
-function quiz(){const qs=getQs();if(qi>=qs.length)qi=0;const q=qs[qi],record=data.answers[q.id];return `<h2>🧩 技能練習｜逐項詳解</h2><p>${esc(M.quizGuide || '每道題目都有四個選項的解析。先選答案，再點「查看詳解」。')}</p><div class="actions">${['all','S','P','E','K'].map(st=>`<button ${quizStage===st?'class="primary"':''} onclick="quizStage='${st}';qi=0;selected=-1;revealed=false;render()">${st==='all'?'全部'+M.questions.length+'題':st+'階段'}</button>`).join('')}</div><div class="card"><span class="pill">第 ${qi+1}／${qs.length} 題 · ${esc(q.kind)}</span><h3>${esc(q.q)}</h3>${q.discussion ? `<details class="coach"><summary>全班討論｜揭曉前先比較</summary><p>${esc(q.discussion)}</p></details>` : ''}${q.options.map((o,i)=>`<button class="choice ${selected===i?'sel':''} ${revealed&&i===q.answer?'good':''} ${revealed&&i===selected&&i!==q.answer?'bad':''}" onclick="choose(${i})">${'ABCD'[i]}. ${esc(o)}</button>`).join('')}${revealed?`<div class="result"><b>${selected===q.answer?'✓ 答對了！':'再想一次：正確答案 '+ 'ABCD'[q.answer]}</b></div>${q.why.map((x,i)=>`<div class="expl"><b>${'ABCD'[i]} ${i===q.answer?'（正解）':''}</b>：${esc(x)}</div>`).join('')}${q.transfer?`<div class="coach"><b>用回自己的作文</b><p>${esc(q.transfer)}</p></div>`:''}`:''}<div class="actions"><button ${selected<0||revealed?'disabled':''} onclick="reveal()">查看逐項詳解</button><button ${qi===0?'disabled':''} onclick="previousQ()">← 上一題</button><button onclick="nextQ()">${qi===qs.length-1?'回到第一題':'下一題 →'}</button></div></div><p class="muted">已練習 ${Object.keys(data.answers).length} / ${M.questions.length} 題；答錯可以再次嘗試。每題保存最近一次作答。</p>${M.quizChecklist ? `<details class="card"><summary>回到自己的作文｜三項檢查</summary><ol class="quiz-checklist">${M.quizChecklist.map(([title,first,second])=>`<li><strong>${esc(title)}</strong><p>${esc(first)}</p><p>${esc(second)}</p></li>`).join('')}</ol></details>` : ''}<button onclick="nav('home')">回學習首頁</button>`}
+function quiz(){const qs=getQs();if(qi>=qs.length)qi=0;const q=qs[qi],record=data.answers[q.id];return `<h2>🧩 SPEK 題庫闖關</h2><p>${esc(M.quizGuide || '每道題目都有四個選項的解析。先選答案，再點「查看詳解」。')}</p><div class="actions">${['all','S','P','E','K'].map(st=>`<button ${quizStage===st?'class="primary"':''} onclick="quizStage='${st}';qi=0;selected=-1;revealed=false;render()">${st==='all'?'全部'+M.questions.length+'題':({S:'S 觀察',P:'P 構思',E:'E 寫作',K:'K 修改'})[st]}</button>`).join('')}</div><div class="card"><span class="pill">第 ${qi+1}／${qs.length} 題 · ${esc(q.kind)}</span><h3>${esc(q.q)}</h3>${q.discussion ? `<details class="coach"><summary>全班討論｜揭曉前先比較</summary><p>${esc(q.discussion)}</p></details>` : ''}${q.options.map((o,i)=>`<button class="choice ${selected===i?'sel':''} ${revealed&&i===q.answer?'good':''} ${revealed&&i===selected&&i!==q.answer?'bad':''}" onclick="choose(${i})">${'ABCD'[i]}. ${esc(o)}</button>`).join('')}${revealed?`<div class="result"><b>${selected===q.answer?'✓ 答對了！':'再想一次：正確答案 '+ 'ABCD'[q.answer]}</b></div>${q.why.map((x,i)=>`<div class="expl"><b>${'ABCD'[i]} ${i===q.answer?'（正解）':''}</b>：${esc(x)}</div>`).join('')}${q.transfer?`<div class="coach"><b>用回自己的作文</b><p>${esc(q.transfer)}</p></div>`:''}`:''}<div class="actions"><button ${selected<0||revealed?'disabled':''} onclick="reveal()">查看逐項詳解</button><button ${qi===0?'disabled':''} onclick="previousQ()">← 上一題</button><button onclick="nextQ()">${qi===qs.length-1?'回到第一題':'下一題 →'}</button></div></div><p class="muted">已練習 ${M.questions.filter(q=>data.answers[q.id]).length} / ${M.questions.length} 題；答錯可以再次嘗試。每題保存最近一次作答。</p>${M.quizChecklist ? `<details class="card"><summary>回到自己的作文｜三項檢查</summary><ol class="quiz-checklist">${M.quizChecklist.map(([title,first,second])=>`<li><strong>${esc(title)}</strong><p>${esc(first)}</p><p>${esc(second)}</p></li>`).join('')}</ol></details>` : ''}<button onclick="nav('home')">回學習首頁</button>`}
 function choose(i){if(revealed)return;selected=i;render()};function reveal(){if(selected<0)return;const q=getQs()[qi];revealed=true;data.answers[q.id]={selected,correct:selected===q.answer};save();render()};function previousQ(){
   if(qi<=0) return;
   qi--;
@@ -6010,7 +6189,7 @@ async function downloadPassportPdf(){
 
 
 function download(){const blob=new Blob([report()],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=M.id+'_學習護照.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)}
-function portfolio(){const answered=Object.values(data.answers),correct=answered.filter(a=>a.correct).length;return `<h2>📚 我的成長護照</h2><div class="grid"><div class="card soft"><b>SPEAK完成率</b><h2>${pct()}%</h2></div><div class="card soft"><b>最近一次答對</b><h2>${correct} / ${answered.length}</h2></div><div class="card soft"><b>初稿字數</b><h2>${data.draft.reduce((n,t)=>n+length(t),0)}</h2></div><div class="card soft"><b>修訂稿字數</b><h2>${data.revised.reduce((n,t)=>n+length(t),0)}</h2></div></div><p>保存紀錄不等於教師評定過關；文章與演說仍需要自評或教師依規準檢核。</p><div class="actions"><button class="primary" onclick="downloadPassportPdf()">匯出 PDF</button><button onclick="download()">匯出文字檔</button><button onclick="copyReport()">複製到剪貼簿</button></div><p class="muted">iPad 若打開分享選單，選「儲存到『檔案』」。檔名為「座號姓名_作文主題.pdf」。</p><p id="reportState" class="muted" role="status"></p><details class="card"><summary>清除本機練習資料</summary><p>此操作不能復原，請先匯出成果。</p><button onclick="resetAll()">確定清除</button></details>`}
+function portfolio(){const answered=M.questions.map(q=>data.answers[q.id]).filter(Boolean),correct=answered.filter(a=>a.correct).length;return `<h2>📚 我的成長護照</h2><div class="grid"><div class="card soft"><b>SPEAK完成率</b><h2>${pct()}%</h2></div><div class="card soft"><b>最近一次答對</b><h2>${correct} / ${answered.length}</h2></div><div class="card soft"><b>初稿字數</b><h2>${data.draft.reduce((n,t)=>n+length(t),0)}</h2></div><div class="card soft"><b>修訂稿字數</b><h2>${data.revised.reduce((n,t)=>n+length(t),0)}</h2></div></div><p>保存紀錄不等於教師評定過關；文章與演說仍需要自評或教師依規準檢核。</p><div class="actions"><button class="primary" onclick="downloadPassportPdf()">匯出 PDF</button><button onclick="download()">匯出文字檔</button><button onclick="copyReport()">複製到剪貼簿</button></div><p class="muted">iPad 若打開分享選單，選「儲存到『檔案』」。檔名為「座號姓名_作文主題.pdf」。</p><p id="reportState" class="muted" role="status"></p><details class="card"><summary>清除本機練習資料</summary><p>此操作不能復原，請先匯出成果。</p><button onclick="resetAll()">確定清除</button></details>`}
 async function copyReport(){try{await navigator.clipboard.writeText(report());el('reportState').textContent='✓ 已複製'}catch(e){el('reportState').textContent='此瀏覽器無法直接複製，請用下載文字檔'}}
 function resetAll(){if(confirm('確定刪除本裝置上此模組的所有學習資料？')){localStorage.removeItem(moduleKey());data=empty();nav('home')}}
 render();
